@@ -15,33 +15,7 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    <img src="favicon.png" alt="Logo">
-                </a>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a href="#learn" class="navbar-item">
-                        Learn with pleasure
-                    </a>
-                    <a href="#skills" class="navbar-item">
-                        Increase your skills
-                    </a>
-                    <a href="#picture" class="navbar-item">
-                        Picture
-                    </a>
-                    <a href="#contact" class="navbar-item">
-                        Contact-Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
+<%@include file="header.jsp" %>
 
 <section class="hero is-info is-medium is-bold">
     <div class="hero-body header-image">
@@ -123,7 +97,7 @@
                         </div>
                     </div>
                     <div class="content article-body">
-                        <form>
+                        <form action="form.jsp">
                             <div class="field">
                                 <label for="firstname" class="label">First Name</label>
                                 <div class="control">
@@ -160,24 +134,6 @@
         </div>
     </section>
 </div>
-<footer class="footer has-text-centered">
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <figure class="image image-footer has-image-centered">
-                    <img src="images/wildcodeschool.png">
-                </figure>
-                <p>
-                    <strong class="has-text-weight-semibold">
-                        <a class="yellow shadow" href="https://www.wildcodeschool.com">Wild Code School</a>
-                    </strong>
-                </p>
-                <p>
-                    Learn tech skills with passion
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+<%@include file="footer.jsp" %>
 </body>
 </html>
